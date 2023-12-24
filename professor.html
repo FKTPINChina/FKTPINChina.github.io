@@ -92,27 +92,7 @@
             margin-bottom: 0px; /* 清除底部間距 */
             margin-left: 20px; /* 增加左邊距 */
         }
-
-        .background1 {
-            position: fixed;
-            top: 21%; /* 垂直置中 */
-            left: 5%;
-            width: 700%;
-            height: 100%;
-            background-repeat: no-repeat;
-            background-image: url(CrazyDogThai.png);
-        }
-
-        .background2 {
-            position: fixed;
-            top: 58%; /* 垂直置中 */
-            left: 5%;
-            width: 100%;
-            height: 100%;
-            background-repeat: no-repeat;
-            background-image: url(ChillHandsome.png);
-        }
-
+        
         h2 {
             display: flex;
             align-items: center;
@@ -129,7 +109,40 @@
             color: white; /* 白色字體 */
             font-size: 30px;
         }
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
 
+        .profile-container {
+            display: flex;
+            justify-content: space-between; /* 使两个容器之间有间距 */
+            margin: 0 -30px; /* 控制两个容器之间的间距 */
+        }
+        
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .profile-image {
+            width: 400px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .profile-text {
+            font-size: 25px;
+            text-align: left;
+        }
     </style>
 </head>
 
@@ -145,8 +158,28 @@
         </h1>
         <h2>教授资讯</h2>
     </header>
-    <div class="background1"></div>
-    <div class="background2"></div>
+    <div class="profile-container">
+        <div class="profile">
+            <img src="CrazyDogThai.png" alt="Image 1" class="profile-image">
+            <div class="profile-text">
+                <b>疯狗泰 教授<br><br></b>
+                学历 : 清华大学计算机科学与技术<br><br>
+                专业 : 疯狗泰式资料结构教学<br><br>
+                编程年资 : 30年<br><br>
+                个人邮箱 : crazydogthai64@gmail.com
+            </div>
+        </div>
+        <div class="profile">
+            <img src="ChillHandsome.png" alt="Image 2" class="profile-image">
+            <div class="profile-text">
+                <b>蚯蚓俊 教授<br><br></b>
+                学历 : 山东蓝翔电脑学院<br><br>
+                专业 : 程式语言美术编辑<br><br>
+                编程年资 : 8年<br><br>
+                个人邮箱 : chillhandsome@gmail.com<br>
+            </div>
+        </div>
+    </div>
     <footer style="text-align: right;">
         <p>&copy;2023 中华人民共和国疯狗泰编程教育中心 </p>
     </footer>
